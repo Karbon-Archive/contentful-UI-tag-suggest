@@ -1,0 +1,24 @@
+{
+  "id": "contentful-tag-suggest",
+  "name": "tag suggest",
+  "srcdoc": "./build/index.html",
+  "fieldTypes": [
+    "Symbols"
+  ],
+  "parameters": {
+    "instance": [
+      {
+        "id": "fieldName",
+        "type": "Symbol",
+        "name": "Field Name",
+        "description": "The name of the field to search for on content types (the default is 'tags')"
+      },{
+        "id": "allowAdd",
+        "type": "Boolean",
+        "default": true,
+        "name": "Allow free form adding of new tags",
+        "description": "Allow new tags to be created that don't currently exist"
+      }
+    ]
+  }
+}
