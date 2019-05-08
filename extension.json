@@ -2,22 +2,20 @@
   "id": "contentful-tag-suggest",
   "name": "tag suggest",
   "srcdoc": "./build/index.html",
-  "fieldTypes": [
-    "Symbols"
-  ],
+  "fieldTypes": ["Entries"],
+
   "parameters": {
     "instance": [
       {
-        "id": "fieldName",
+        "id": "helpText",
         "type": "Symbol",
-        "name": "Field Name",
-        "description": "The name of the field to search for on content types (the default is 'tags')"
-      },{
-        "id": "allowAdd",
-        "type": "Boolean",
-        "default": true,
-        "name": "Allow free form adding of new tags",
-        "description": "Allow new tags to be created that don't currently exist"
+        "name": "Help text"
+      },
+      {
+        "id": "categoryFieldName",
+        "name": "Category field Name to watch",
+        "description": "The name of the relationship field that represent the category object - this is what this field watches to know what tags to show. Defaults to 'category'",
+        "type": "Symbol"
       }
     ]
   }
